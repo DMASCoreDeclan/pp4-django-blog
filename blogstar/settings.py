@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # DEBUG = False # True
 
 #Use env.py to set DEBUG = True locally and False in Heoku
-Debug = os.environ.get("SECRET_KEY_STATUS")
+DEBUG = os.environ.get("SECRET_KEY_STATUS")
 
 ALLOWED_HOSTS = [
     '8000-dmascoredec-pp4djangobl-kz3kucgt2t2.ws-eu106.gitpod.io',

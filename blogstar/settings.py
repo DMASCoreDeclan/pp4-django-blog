@@ -38,6 +38,7 @@ DEBUG = os.environ.get("SECRET_KEY_STATUS")
 
 ALLOWED_HOSTS = [
     '8000-dmascoredec-pp4djangobl-kz3kucgt2t2.ws-eu106.gitpod.io',
+    '8000-dmascoredec-pp4djangobl-kz3kucgt2t2.ws-eu107.gitpod.io',
     '.herokuapp.com',
 
 ]
@@ -101,6 +102,12 @@ WSGI_APPLICATION = 'blogstar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.gitpod.io",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

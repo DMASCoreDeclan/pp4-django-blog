@@ -31,7 +31,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False # True
+# DEBUG = False # True
+
+#Use env.py to set DEBUG = True locally and False in Heoku
+Debug = os.environ.get("SECRET_KEY_STATUS")
 
 ALLOWED_HOSTS = [
     '8000-dmascoredec-pp4djangobl-kz3kucgt2t2.ws-eu106.gitpod.io',

@@ -14,11 +14,6 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
-                <!-- {% if "placeholder" in post.featured_image.url %} -->
-                <!-- <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder"> -->
-                <!-- {% else %} -->
-                <!-- <img src="{{ post.featured_image.url }}" class="scale" alt="{{ post.title }}"> -->
-                <!-- {% endif %} -->
             </div>
         </div>
     </div>
@@ -71,8 +66,8 @@
                     <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
                     {% endif %}
                 </div>
-                <!-- Our for loop ends here -->
                 {% endfor %}
+                <!-- Our for loop ends here -->
             </div>
         </div>
         <div class="col-md-4 card mb-4 mt-3 ">

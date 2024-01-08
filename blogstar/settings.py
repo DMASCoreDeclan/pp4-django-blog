@@ -32,10 +32,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False # True
+DEBUG = False # True
 
 #Use env.py to set DEBUG = True locally and False in Heoku
-DEBUG = os.environ.get("SECRET_KEY_STATUS")
+# DEBUG = os.environ.get("SECRET_KEY_STATUS")
 
 ALLOWED_HOSTS = [
     '8000-dmascoredec-pp4djangobl-kz3kucgt2t2.ws-eu106.gitpod.io',
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -60,6 +61,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'django_summernote',
+    'cloudinary',
     'blog',
     'about',
 ]
